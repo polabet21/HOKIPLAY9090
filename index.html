@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HOKIPLAY90 Situs Resmi | Login & Daftar Cepat</title>
+
+<meta name="description" content="HOKIPLAY90 situs resmi dengan akses login dan daftar cepat, tampilan modern, aman, dan mudah diakses.">
+<meta name="keywords" content="HOKIPLAY90, hokiplay90 login, hokiplay90 daftar, situs resmi">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="./">
+
+<!-- Open Graph -->
+<meta property="og:title" content="HOKIPLAY90 Situs Resmi">
+<meta property="og:description" content="Login & Daftar HOKIPLAY90 Akses Cepat">
+<meta property="og:type" content="website">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+<style>
+body{
+margin:0;
+font-family:Poppins;
+background:#0a0a0a;
+color:#fff;
+text-align:center;
+}
+
+.container{
+padding:40px 20px;
+max-width:900px;
+margin:auto;
+}
+
+h1{
+font-size:32px;
+color:#ffd700;
+text-shadow:0 0 10px #ffd700;
+}
+
+p{opacity:0.8}
+
+.btn{
+display:block;
+margin:15px auto;
+padding:15px;
+width:80%;
+max-width:300px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn-daftar{
+background:linear-gradient(45deg,#ffd700,#ff9900);
+color:#000;
+}
+
+.btn-login{
+background:linear-gradient(45deg,#222,#555);
+color:#fff;
+}
+
+.btn:hover{
+transform:scale(1.05);
+box-shadow:0 0 15px #ffd700;
+}
+
+/* Loading */
+#loading{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#000;
+display:none;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+}
+
+.bar{
+width:80%;
+height:20px;
+background:#222;
+border-radius:20px;
+overflow:hidden;
+margin-top:20px;
+}
+
+.progress{
+height:100%;
+width:0%;
+background:linear-gradient(90deg,#ffd700,#ff6600);
+}
+
+.faq{
+margin-top:40px;
+text-align:left;
+}
+
+.faq h3{color:#ffd700}
+
+.item{
+background:#111;
+margin:10px 0;
+padding:10px;
+border-radius:8px;
+cursor:pointer;
+}
+
+.answer{
+display:none;
+opacity:0.8;
+padding-top:5px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>HOKIPLAY90 SITUS RESMI</h1>
+<p>Akses login & daftar cepat, aman, dan mudah digunakan.</p>
+
+<button class="btn btn-daftar" onclick="startLoad('https://lampujakarta.it.com/register?referral_code=none')">
+DAFTAR SEKARANG
+</button>
+
+<button class="btn btn-login" onclick="startLoad('https://lampupion.it.com/register?referral_code=none')">
+LOGIN SEKARANG
+</button>
+
+<!-- FAQ -->
+<div class="faq">
+<h3>FAQ HOKIPLAY90</h3>
+
+<div class="item" onclick="toggle(this)">
+Apa itu HOKIPLAY90?
+<div class="answer">HOKIPLAY90 adalah halaman akses informasi dan login cepat.</div>
+</div>
+
+<div class="item" onclick="toggle(this)">
+Bagaimana cara daftar?
+<div class="answer">Klik tombol daftar dan isi form yang tersedia.</div>
+</div>
+
+<div class="item" onclick="toggle(this)">
+Apakah aman?
+<div class="answer">Sistem menggunakan akses terenkripsi.</div>
+</div>
+
+<div class="item" onclick="toggle(this)">
+Bagaimana cara login?
+<div class="answer">Klik tombol login untuk masuk ke halaman akun.</div>
+</div>
+
+<div class="item" onclick="toggle(this)">
+Apakah bisa diakses mobile?
+<div class="answer">Ya, 100% responsif di semua perangkat.</div>
+</div>
+</div>
+
+</div>
+
+<!-- LOADING -->
+<div id="loading">
+<h2>Loading...</h2>
+<div class="bar">
+<div class="progress" id="bar"></div>
+</div>
+</div>
+
+<script>
+function startLoad(url){
+let loading = document.getElementById("loading");
+let bar = document.getElementById("bar");
+
+loading.style.display="flex";
+let i=0;
+
+let int = setInterval(()=>{
+i++;
+bar.style.width=i+"%";
+
+if(i>=100){
+clearInterval(int);
+window.location.href=url;
+}
+},20);
+}
+
+function toggle(el){
+let ans = el.querySelector(".answer");
+ans.style.display = ans.style.display==="block"?"none":"block";
+}
+</script>
+
+</body>
+</html>
