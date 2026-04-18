@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://hokiplay90.site/</loc>
+    <lastmod>2026-04-18</lastmod>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- Jika ada halaman login -->
+  <url>
+    <loc>https://hokiplay90.site/login</loc>
+    <lastmod>2026-04-18</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Jika ada halaman daftar -->
+  <url>
+    <loc>https://hokiplay90.site/register</loc>
+    <lastmod>2026-04-18</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- halaman lain (kalau ada) -->
+  <url>
+    <loc>https://hokiplay90.site/about</loc>
+    <lastmod>2026-04-18</lastmod>
+    <priority>0.60</priority>
+  </url>
+
+</urlset>
